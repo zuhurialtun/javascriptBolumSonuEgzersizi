@@ -33,9 +33,9 @@ let shopListDOM = document.querySelector('#shopList')
 let shopListTotalDOM = document.querySelector('#shopListTotal')
 
 let totalPrice = document.querySelector('#shopListTotal>li>span').innerHTML
-let price = parseInt(totalPrice.slice(0,totalPrice.search(" TL")))
+let price = parseInt(totalPrice.slice(0, totalPrice.search(" TL")))
 
-const urunEkle = (urunAd,urunFiyat) => {
+const urunEkle = (urunAd, urunFiyat) => {
     let liDOM = document.createElement('li')
     liDOM.innerHTML = `
     ${urunAd}
